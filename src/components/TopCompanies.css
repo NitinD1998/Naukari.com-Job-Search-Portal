@@ -1,0 +1,136 @@
+.top-companies {
+    width: 100%;
+}
+
+.companies-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 24px;
+    padding-bottom: 24px;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.companies-container::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.company-card {
+    min-width: 280px;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+@media (min-width: 1024px) {
+    .companies-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        overflow-x: visible;
+    }
+}
+
+.company-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+}
+
+.company-logo-placeholder {
+    width: 56px;
+    height: 56px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.company-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.company-rating {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.star-icon {
+    margin-right: 4px;
+}
+
+.company-reviews {
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-left: 4px;
+}
+
+.company-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.company-tags .tag {
+    background-color: var(--secondary-color);
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: var(--border-radius-full);
+    font-weight: 500;
+}
+
+.btn-view-jobs {
+    margin-top: auto;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    border-radius: var(--border-radius-full);
+    transition: var(--transition);
+}
+
+.btn-view-jobs:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.companies-footer {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.btn-view-all.outline {
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 12px 32px;
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+    border-radius: var(--border-radius-full);
+    transition: var(--transition);
+}
+
+.btn-view-all.outline:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
