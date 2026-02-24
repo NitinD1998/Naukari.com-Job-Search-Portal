@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import logo from '../assets/logo.jpeg';
 
 const Footer = () => {
     return (
@@ -9,8 +10,8 @@ const Footer = () => {
                 <div className="footer-grid">
                     <div className="footer-col brand-col">
                         <div className="footer-logo">
-                            <span className="logo-text">naukri</span>
-                            <span className="logo-dot">.com</span>
+                            <img src={logo} alt="Ardhnarishwar Logo" className="footer-logo-img" />
+                            <span className="logo-text">Ardhnarishwar</span>
                         </div>
                         <p className="footer-tagline">Connect with us</p>
                         <div className="social-icons">
@@ -24,7 +25,7 @@ const Footer = () => {
                     <div className="footer-col">
                         <h4 className="footer-heading">About Us</h4>
                         <ul className="footer-links">
-                            <li><a href="#">About Naukri</a></li>
+                            <li><a href="#">About Ardhnarishwar</a></li>
                             <li><a href="#">Careers</a></li>
                             <li><a href="#">Employer Home</a></li>
                             <li><a href="#">Sitemap</a></li>

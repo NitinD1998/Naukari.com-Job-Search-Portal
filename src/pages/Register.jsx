@@ -27,7 +27,7 @@ const Register = () => {
 
         const result = await register(formData);
         if (result.success) {
-            navigate('/');
+            navigate('/candidate-join');
         } else {
             setError(result.message);
         }
@@ -112,7 +112,7 @@ const Register = () => {
                         <div className="terms-checkbox">
                             <input type="checkbox" id="terms" required />
                             <label htmlFor="terms">
-                                By clicking Register, you agree to the Terms and Conditions & Privacy Policy of Naukri.com
+                                By clicking Register, you agree to the Terms and Conditions & Privacy Policy of Ardhnarishwar
                             </label>
                         </div>
 

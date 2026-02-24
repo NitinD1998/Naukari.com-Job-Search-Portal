@@ -23,7 +23,7 @@ app.use('/api/companies', companyRoutes);
 
 // Basic route for testing
 app.get('/', (req, res) => {
-    res.send('Naukri Clone API is running (In-Memory Database Mode)');
+    res.send('Ardhnarishwar Clone API is running (In-Memory Database Mode)');
 });
 
 const PORT = process.env.PORT || 5000;

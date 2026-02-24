@@ -25,10 +25,20 @@
 }
 
 .brand-col .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: -0.5px;
     margin-bottom: 16px;
+}
+
+.footer-logo-img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
 }
 
 .brand-col .logo-text {

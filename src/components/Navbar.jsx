@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Search, Bell, User } from 'lucide-react';
 import { AuthContext } from '../context/AuthContext';
+import logo from '../assets/logo.jpeg';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -13,14 +14,15 @@ const Navbar = () => {
             <div className="container nav-container">
                 <div className="nav-left">
                     <Link to="/" className="logo">
-                        <span className="logo-text">naukri</span>
-                        <span className="logo-dot">.com</span>
+                        <img src={logo} alt="Ardhnarishwar Logo" className="logo-img" />
+                        <span className="logo-text">Ardhnarishwar</span>
                     </Link>
 
                     <ul className="nav-links desktop-only">
                         <li><Link to="/jobs">Jobs</Link></li>
                         <li><Link to="/companies">Companies</Link></li>
-                        <li><Link to="/candidate-join">For Candidates</Link></li>
+                        <li><Link to="/candidates">For Candidates</Link></li>
+                        <li><Link to="/dashboard">My Dashboard</Link></li>
                         <li><Link to="/cv-generator">CV Builder</Link></li>
                         <li><Link to="/client-inquiry">Client Inquiry</Link></li>
                         <li><Link to="/feedback">Feedback</Link></li>
@@ -59,7 +61,7 @@ const Navbar = () => {
                     <ul className="mobile-nav-links">
                         <li><Link to="/jobs" onClick={() => setIsMobileMenuOpen(false)}>Jobs</Link></li>
                         <li><Link to="/companies" onClick={() => setIsMobileMenuOpen(false)}>Companies</Link></li>
-                        <li><Link to="/candidate-join" onClick={() => setIsMobileMenuOpen(false)}>For Candidates</Link></li>
+                        <li><Link to="/candidates" onClick={() => setIsMobileMenuOpen(false)}>For Candidates</Link></li>
                         <li><Link to="/cv-generator" onClick={() => setIsMobileMenuOpen(false)}>CV Builder</Link></li>
                         <li><Link to="/client-inquiry" onClick={() => setIsMobileMenuOpen(false)}>Client Inquiry</Link></li>
                         <li><Link to="/feedback" onClick={() => setIsMobileMenuOpen(false)}>Feedback</Link></li>

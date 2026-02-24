@@ -6,8 +6,9 @@ const Employers = () => {
         <div style={{ padding: '80px 20px', textAlign: 'center', minHeight: '60vh' }}>
             <h2>Employer Portal</h2>
             <p style={{ marginTop: '20px', color: '#666' }}>Welcome to the employer portal. Here you can post jobs and find top talent.</p>
-            <div style={{ marginTop: '30px' }}>
+            <div style={{ marginTop: '30px', display: 'flex', justifyContent: 'center', gap: '20px' }}>
                 <Link to="/post-job" className="btn-login-submit" style={{ display: 'inline-block', maxWidth: '200px', textDecoration: 'none', lineHeight: '24px' }}>Post a Job</Link>
+                <Link to="/employer-register" className="btn-login-submit" style={{ display: 'inline-block', maxWidth: '250px', textDecoration: 'none', lineHeight: '24px', background: '#3949ab' }}>Register Company</Link>
             </div>
         </div>
     );

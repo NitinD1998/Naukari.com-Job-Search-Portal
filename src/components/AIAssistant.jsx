@@ -5,7 +5,7 @@ import './AIAssistant.css';
 const AIAssistant = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState([
-        { id: 1, sender: 'bot', text: 'Hello! I am your 24/7 Naukri Assistant. How can I help you accelerate your career today?' }
+        { id: 1, sender: 'bot', text: 'Hello! I am your 24/7 Ardhnarishwar Assistant. How can I help you accelerate your career today?' }
     ]);
     const [input, setInput] = useState('');
     const messagesEndRef = useRef(null);
@@ -68,7 +68,7 @@ const AIAssistant = () => {
                     <div className="header-info">
                         <Bot size={22} className="bot-icon-header" />
                         <div>
-                            <h4>Naukri AI Assistant</h4>
+                            <h4>Ardhnarishwar AI Assistant</h4>
                             <span className="online-status">Online 24/7</span>
                         </div>
                     </div>

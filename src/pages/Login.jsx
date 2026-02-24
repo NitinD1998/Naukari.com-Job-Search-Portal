@@ -26,9 +26,9 @@ const Login = () => {
         <div className="login-page">
             <div className="login-container">
                 <div className="login-left">
-                    <h2>New to Naukri?</h2>
+                    <h2>New to Ardhnarishwar?</h2>
                     <ul className="benefits-list">
-                        <li>✓ One click apply using naukri profile.</li>
+                        <li>✓ One click apply using ardhnarishwar profile.</li>
                         <li>✓ Get relevant job recommendations.</li>
                         <li>✓ Showcase profile to top companies and consultants.</li>
                         <li>✓ Know application status on applied jobs.</li>
@@ -44,7 +44,7 @@ const Login = () => {
                             <label>Email ID / Username</label>
                             <input
                                 type="text"
-                                placeholder="Enter your active Email ID / Username"
+                                placeholder="Enter your active Email ID / Username" // This line was not changed as the provided edit was syntactically incorrect for a placeholder.
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
